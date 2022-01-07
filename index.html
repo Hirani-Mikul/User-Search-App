@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <title>USERS</title>
+  </head>
+  <body>
+    <header>
+      <h1>Users</h1>
+      <form id="form">
+        <input type="text" name="name" id="name" placeholder="Search here" />
+        <button type="submit">Search</button>
+      </form>
+      <div class="pages">
+        <p>Pages</p>
+        <ul id="page_list"></ul>
+      </div>
+    </header>
+    <main>
+      <!-- LIST ALL USERS / SEARCHED USERS -->
+      <ul id="users_list"></ul>
+
+      <!-- SHOW DETAILS OF THE SELECTED PROFILE -->
+      <section id="profile_info"></section>
+    </main>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
